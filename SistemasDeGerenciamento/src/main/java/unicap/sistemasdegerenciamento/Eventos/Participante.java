@@ -1,5 +1,13 @@
 package unicap.sistemasdegerenciamento.Eventos;
 
-public class Participante {
-    
+class Participante {
+    private String nome;
+
+    public Participante(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
 }
