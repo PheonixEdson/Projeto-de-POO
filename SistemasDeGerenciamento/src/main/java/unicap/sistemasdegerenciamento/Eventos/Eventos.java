@@ -45,8 +45,7 @@ public class Eventos {
                 case 2:
                     if (eventos.isEmpty()) {
                         System.out.println("Nenhum evento cadastrado.");
-                    } 
-                    else {
+                    } else {
                         System.out.println("\n--- Lista de Eventos ---");
                         for (int i = 0; i < eventos.size(); i++) {
                             System.out.println((i + 1) + ". " + eventos.get(i).getNome());
@@ -57,8 +56,7 @@ public class Eventos {
                 case 3:
                     if (eventos.isEmpty()) {
                         System.out.println("Nenhum evento cadastrado para gerenciar.");
-                    } 
-                    else {
+                    } else {
                         System.out.print("Digite o número do evento que deseja gerenciar: ");
                         int indiceEvento = scanner.nextInt() - 1;
                         scanner.nextLine();
@@ -83,7 +81,14 @@ public class Eventos {
                                     case 1:
                                         System.out.print("Digite o nome do participante: ");
                                         String nomeParticipante = scanner.nextLine();
-                                        Participante participante = new Participante(nomeParticipante);
+                                        System.out.print("Digite o email do participante: ");
+                                        String emailParticipante = scanner.nextLine();
+                                        System.out.print("Digite o telefone do participante: ");
+                                        String telefoneParticipante = scanner.nextLine();
+                                        System.out.print("Digite a idade do participante: ");
+                                        int idadeParticipante = scanner.nextInt();
+                                        scanner.nextLine();
+                                        Participante participante = new Participante(nomeParticipante, emailParticipante, telefoneParticipante, idadeParticipante);
                                         eventoGerenciar.cadastrarParticipante(participante);
                                         break;
                                     case 2:
@@ -108,8 +113,7 @@ public class Eventos {
                                         break;
                                 }
                             } while (opcaoEvento != 0);
-                        } 
-                        else {
+                        } else {
                             System.out.println("Evento inválido.");
                         }
                     }
@@ -128,3 +132,4 @@ public class Eventos {
         scanner.close();
     }
 }
+
