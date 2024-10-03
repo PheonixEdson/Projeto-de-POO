@@ -23,8 +23,7 @@ class Evento {
             participantes.add(participante);
             vagasDisponiveis--;
             System.out.println("Participante cadastrado!");
-        } 
-        else {
+        } else {
             System.out.println("Sem vagas disponíveis!");
         }
     }
@@ -34,8 +33,7 @@ class Evento {
         if (participanteRemovido) {
             vagasDisponiveis++;
             System.out.println("Participante removido!");
-        } 
-        else {
+        } else {
             System.out.println("Participante não encontrado!");
         }
     }
@@ -45,13 +43,13 @@ class Evento {
     }
 
     public void gerarRelatorioParticipacao() {
-        System.out.println("\n--- Relatório de Participação ---");
+        System.out.println("\n--- Relatório de Participantes ---");
         System.out.println("Evento: " + nome);
         System.out.println("Data: " + data);
         System.out.println("Local: " + local.getNome() + ", " + local.getEndereco());
         System.out.println("Participantes:");
         for (Participante participante : participantes) {
-            System.out.println("- " + participante.getNome());
+            System.out.println("- " + participante.getNome() + " (Idade: " + participante.getIdade() + ", Email: " + participante.getEmail() + ")");
         }
     }
 
@@ -66,5 +64,13 @@ class Evento {
 
     public String getNome() {
         return nome;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public Local getLocal() {
+        return local;
     }
 }
