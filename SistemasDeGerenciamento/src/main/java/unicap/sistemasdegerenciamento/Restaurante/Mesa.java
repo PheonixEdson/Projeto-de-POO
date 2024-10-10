@@ -8,7 +8,11 @@ public class Mesa {
     public Mesa(int numero){
         this.numero = numero;
         this.ocupada = false;
-        this.pedido = new Pedido();
+        this.pedido = new Pedido(gerarId(), this);
+    }
+    
+    private int gerarId(){
+        return (int)(Math.random() * 1000);
     }
     
     public void ocuparMesa(){
@@ -22,7 +26,7 @@ public class Mesa {
     
     public void liberarMesa(){
         ocupada = false;
-        pedido = new Pedido();
+        pedido = new Pedido(gerarId(), this);
     }
 
     public int getNumero(){
