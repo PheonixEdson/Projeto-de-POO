@@ -8,10 +8,10 @@ public class Mesa {
     public Mesa(int numero){
         this.numero = numero;
         this.ocupada = false;
-        this.pedido = new Pedido(gerarId(), this);
+        this.pedido = new Pedido(gerarIdDoPedido(), this);
     }
     
-    private int gerarId(){
+    private int gerarIdDoPedido(){
         return (int)(Math.random() * 1000);
     }
     
@@ -26,7 +26,7 @@ public class Mesa {
     
     public void liberarMesa(){
         ocupada = false;
-        pedido = new Pedido(gerarId(), this);
+        pedido = new Pedido(gerarIdDoPedido(), this);
     }
 
     public int getNumero(){
