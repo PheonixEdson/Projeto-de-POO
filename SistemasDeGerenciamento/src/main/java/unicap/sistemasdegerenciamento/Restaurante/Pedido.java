@@ -40,6 +40,9 @@ public class Pedido {
     
     public void fecharPedido(){
         this.fechado = true;
+        System.out.println("\n>>Conta Fechada<<");
+        System.out.println("Conta Final:");
+        this.gerarRelatorio();
     }
     
     public void reabrirPedido(){
@@ -49,7 +52,8 @@ public class Pedido {
     public void gerarRelatorio(){
         System.out.println("Pedido ID: " + this.id);
         System.out.println("Mesa: " + this.mesa.getNumero());
-        System.out.println("\nPedido do Cliente:");
+        System.out.println("------------------");
+        System.out.println("Pedido do Cliente:");
 
         for(ItemDoPedido item : this.itens){
             System.out.println(">> " +item.getNome()+ " <<");
@@ -59,6 +63,7 @@ public class Pedido {
         }
 
         System.out.println("#Total a pagar: R$" +this.total);
+        
         if(this.fechado == true){
             System.out.println("Conta fechada");
         }

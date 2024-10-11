@@ -20,8 +20,8 @@ public class Restaurante {
         
         pedido.fecharPedido();
         
-        System.out.println("Conta Final: ");
-        pedido.gerarRelatorio();
+        //System.out.println("Conta Final: ");
+        //pedido.gerarRelatorio();
         
         mesa1.liberarMesa();
         System.out.println("\nA mesa foi liberada. Esta ocupada? " + mesa1.isOcupada());
