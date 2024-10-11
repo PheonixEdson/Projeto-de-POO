@@ -24,7 +24,7 @@ public class Restaurante {
         pedido.gerarRelatorio();
         
         mesa1.liberarMesa();
-        System.out.println("\nA mesa foi liberada. Está ocupada? " + mesa1.isOcupada());
+        System.out.println("\nA mesa foi liberada. Esta ocupada? " + mesa1.isOcupada());
         
     }
 }

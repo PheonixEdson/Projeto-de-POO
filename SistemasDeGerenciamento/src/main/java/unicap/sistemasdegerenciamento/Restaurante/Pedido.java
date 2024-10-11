@@ -49,16 +49,16 @@ public class Pedido {
     public void gerarRelatorio(){
         System.out.println("Pedido ID: " + this.id);
         System.out.println("Mesa: " + this.mesa.getNumero());
-        System.out.println("Pedido do Cliente:");
+        System.out.println("\nPedido do Cliente:");
 
         for(ItemDoPedido item : this.itens){
             System.out.println(">> " +item.getNome()+ " <<");
-            System.out.println("Quantidade: " +item.getQuantidade());
-            System.out.println("Preço Unitário: R$" +item.getPreco());
-            System.out.println("Preço Total: R$" +item.calcularPrecoTotal());
+            System.out.println("+Quantidade: " +item.getQuantidade());
+            System.out.println("+Preco Unitario: R$" +item.getPreco());
+            System.out.println("+Preco Total: R$" +item.calcularPrecoTotal());
         }
 
-        System.out.println("Total: R$" +this.total);
+        System.out.println("#Total a pagar: R$" +this.total);
         if(this.fechado == true){
             System.out.println("Conta fechada");
         }
