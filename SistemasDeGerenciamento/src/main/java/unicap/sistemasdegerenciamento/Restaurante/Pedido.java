@@ -17,7 +17,7 @@ public class Pedido {
         this.total = 0.0;
         this.fechado = false;
     }
-
+    
     public void adicionarItem(ItemDoPedido item){
         if(fechado == false){
             itens.add(item);
@@ -38,6 +38,17 @@ public class Pedido {
         }
     }
     
+    public void cancelarPedido(){
+        if(fechado == false){
+            itens.clear();
+            total = 0.0;
+            System.out.println("O seu pedido foi cancelado. Realize um novo pedido.");
+        } 
+        else{
+            System.out.println("O pedido já foi fechado e nao pode ser cancelado.");
+        }
+    }
+    
     public void fecharPedido(){
         this.fechado = true;
         System.out.println("\n>>Conta Fechada<<");
@@ -50,7 +61,7 @@ public class Pedido {
     }
     
     public void gerarRelatorio(){
-        System.out.println("Pedido ID: " + this.id);
+        System.out.println("Pedido ID: " + this.getId());
         System.out.println("Mesa: " + this.mesa.getNumero());
         System.out.println("------------------");
         System.out.println("Pedido do Cliente:");
