@@ -16,7 +16,7 @@ public class Restaurante {
             cont++;
         }
         
-        int resposta, opcMesa, opcConta, opcCancelarP, opcPedido, opcMais, quant;
+        int resposta, opcMesa, opcConta, opcCancelarP, opcPedido, opcMais, quant, opcRemoverItem;
         boolean pedidoCancelado;
         
         do{
@@ -59,6 +59,19 @@ public class Restaurante {
                 System.out.println("\nRelatorio de Pedido da Mesa " +mesaEscolhida.getNumero()+ ": ");
                 pedido.gerarRelatorio();
 
+                System.out.println("Voce deseja remover algum item do seu pedido[1- Sim | 2- Nao]? ");
+                opcRemoverItem = scanner.nextInt();
+                
+                if(opcRemoverItem == 1){
+                    scanner.nextLine();
+                    System.out.println("Informe o nome do item que deseja remover: ");
+                    String nomeItemRemover = scanner.nextLine();
+                    
+                    pedido.removerItem(nomeItemRemover);
+                    System.out.println("\nRelatorio atualizado de Pedido da Mesa " +mesaEscolhida.getNumero()+ ": ");
+                    pedido.gerarRelatorio();
+                }
+                
                 System.out.println("Voce deseja cancelar o seu pedido[1- Sim | 2- Nao]?");
                 opcCancelarP = scanner.nextInt();
                 if(opcCancelarP == 1){

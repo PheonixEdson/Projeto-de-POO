@@ -28,10 +28,25 @@ public class Pedido {
         }
     }
 
-    public void removerItem(ItemDoPedido item){
+    public void removerItem(String nomeItem){
         if(fechado == false){
-            itens.remove(item);
-            total -= item.calcularPrecoTotal();
+            ItemDoPedido itemARemover = null;
+
+            for(ItemDoPedido item : itens){
+                if(item.getNome().equalsIgnoreCase(nomeItem)){
+                    itemARemover = item;
+                    break;
+                }
+            }
+
+            if(itemARemover != null){
+                itens.remove(itemARemover);
+                total -= itemARemover.calcularPrecoTotal();
+                System.out.println("Item removido com sucesso.");
+            }
+            else{
+                System.out.println("Item nao encontrado.");
+            }
         }
         else{
             System.out.println("O pedido ja foi fechado!");
