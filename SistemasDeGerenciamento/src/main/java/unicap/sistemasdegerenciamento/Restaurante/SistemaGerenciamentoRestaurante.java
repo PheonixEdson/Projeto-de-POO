@@ -7,7 +7,7 @@ import java.util.List;
 public class Restaurante {
  
     public static void main(String[] args) {
-Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
         List<Mesa> mesas = new ArrayList<>();
         int cont = 1;
  
