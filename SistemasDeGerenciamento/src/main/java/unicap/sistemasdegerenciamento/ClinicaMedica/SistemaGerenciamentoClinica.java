@@ -166,6 +166,3 @@ public class Clinica {
         }
     }
 }
-Sign Up & Get $35 in BTC • Nexo
-Explore Nexo and get crypto rewards. Complete our referral tasks and get BTC after finishing each one.
- 
