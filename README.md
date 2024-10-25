@@ -3,7 +3,7 @@
  Aplicação Sistema de Eventos - Danilo Teixeira de Carvalho <BR>
  Aplicação Restaurante - Eduardo José Rocha Alexandre e David Cândido de Souza <BR>
 
-# Perguntas - Clínica
+## Perguntas - Clínica
 Como posso adicionar um novo paciente ao sistema? <BR>
 Você pode utilizar a funcionalidade de adicionar paciente, inserindo o nome e o CPF do paciente. Isso será feito selecionando a opção 1 no menu principal.<BR>
 
@@ -19,7 +19,7 @@ Sim. A opção 4 no menu exibe um relatório com todas as consultas já agendada
 O que acontece se eu tentar agendar uma consulta com um médico que não está disponível? <BR>
 O sistema informará que o médico não está disponível ; <BR>
 
-# Perguntas - Sistema de eventos
+## Perguntas - Sistema de eventos
 Quantos participantes estão inscritos em um evento específico? <BR>
 O sistema pode contar o número de participantes cadastrados em um evento específico, consultando a lista de participantes desse evento. <BR>
 
@@ -35,7 +35,7 @@ O sistema pode gerar um relatório com a lista completa dos participantes inscri
 Qual é a lotação máxima e quantos participantes estão presentes em cada evento?<BR>
 O sistema pode fornecer um resumo com a capacidade total (vagas iniciais) de cada evento e o número atual de participantes cadastrados, permitindo verificar a ocupação de cada evento.<BR>
 
-# Perguntas - Restaurante
+## Perguntas - Restaurante
 
 Qual é o item mais pedido pelos clientes? <BR>
 O sistema pode calcular e exibir o item do cardápio com o maior número de pedidos acumulados.<BR>
