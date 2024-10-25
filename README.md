@@ -1,9 +1,9 @@
 # Projeto de POO
- Aplicação da Clinica Médica - Antônio Edson Alves de Holanda Neto <BR>
+ Aplicação da Clínica Médica - Antônio Edson Alves de Holanda Neto <BR>
  Aplicação Sistema de Eventos - Danilo Teixeira de Carvalho <BR>
  Aplicação Restaurante - Eduardo José Rocha Alexandre e David Cândido de Souza <BR>
 
-# Perguntas - Clinica
+# Perguntas - Clínica
 Como posso adicionar um novo paciente ao sistema? <BR>
 Você pode utilizar a funcionalidade de adicionar paciente, inserindo o nome e o CPF do paciente. Isso será feito selecionando a opção 1 no menu principal.<BR>
 
