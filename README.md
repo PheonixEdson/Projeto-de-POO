@@ -35,7 +35,7 @@ O sistema pode gerar um relatório com a lista completa dos participantes inscri
 Qual é a lotação máxima e quantos participantes estão presentes em cada evento?<BR>
 O sistema pode fornecer um resumo com a capacidade total (vagas iniciais) de cada evento e o número atual de participantes cadastrados, permitindo verificar a ocupação de cada evento.<BR>
 
-#Perguntas - Restaurante
+# Perguntas - Restaurante
 
 Qual é o item mais pedido pelos clientes? <BR>
 O sistema pode calcular e exibir o item do cardápio com o maior número de pedidos acumulados.<BR>
