@@ -10,7 +10,7 @@ class Evento {
     private int vagasDisponiveis;
     private List<Participante> participantes;
 
-    public Evento(String nome, String data, Local local, int vagasDisponiveis) {
+    public Evento(String nome, String data, Local local /*int vagasDisponiveis*/) {
         this.nome = nome;
         this.data = data;
         this.local = local;

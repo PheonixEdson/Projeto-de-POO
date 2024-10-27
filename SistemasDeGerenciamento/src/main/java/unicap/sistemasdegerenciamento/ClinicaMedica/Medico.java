@@ -4,10 +4,11 @@ public class Medico {
     private String nome;
     private String especialidade;
     private boolean disponivel;
+    
     public Medico(String nome, String especialidade) {
         this.nome = nome;
         this.especialidade = especialidade;
-        this.disponivel = true;  // Inicialmente disponível
+        this.disponivel = true;
     }
     public String getNome() {
         return nome;

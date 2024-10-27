@@ -53,18 +53,19 @@ Scanner scanner = new Scanner(System.in);
         
         System.out.print("Endereço do local: ");
         String enderecoLocal = scanner.nextLine();
+        
         Local local = new Local(nomeLocal, enderecoLocal);
- 
         Evento evento = new Evento(nome, data, local);
         eventos.add(evento);
- 
+
         System.out.println("Evento cadastrado com sucesso!");
     }
  
     private static void listarEventos(List<Evento> eventos) {
         if (eventos.isEmpty()) {
             System.out.println("Nenhum evento cadastrado.");
-        } else {
+        } 
+        else {
             System.out.println("\nLista de Eventos:");
             for (int i = 0; i < eventos.size(); i++) {
                 Evento evento = eventos.get(i);
@@ -119,7 +120,6 @@ Scanner scanner = new Scanner(System.in);
         }
     }
  
-   
     private static void adicionarParticipante(Scanner scanner, Evento evento) {
         System.out.print("Nome do participante: ");
         String nome = scanner.nextLine();
@@ -135,7 +135,7 @@ Scanner scanner = new Scanner(System.in);
         scanner.nextLine();  // Consumir a nova linha
  
         Participante participante = new Participante(nome, email, telefone, idade);
-        evento.adicionarParticipante(participante);
+        evento.casdastrarParticipante(participante);
         System.out.println("Participante adicionado com sucesso!");
     }
  

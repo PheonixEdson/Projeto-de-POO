@@ -23,10 +23,22 @@ public class ClinicaMedica {
                 case 1:
                     System.out.print("Digite o nome do paciente: ");
                     String nomePaciente = scanner.nextLine();
+                    
                     System.out.print("Digite o CPF do paciente: ");
                     String cpfPaciente = scanner.nextLine();
-                    Paciente paciente = new Paciente(nomePaciente, cpfPaciente);
+                    
+                    System.out.println("Digite a idade do paciente: ");
+                    int idadePaciente = scanner.nextInt();
+                    
+                    System.out.println("Digite o email do paciente: ");
+                    String emailPaciente = scanner.nextLine();
+                    
+                    System.out.println("Digite o telefone do paciente: ");
+                    String telefonePaciente = scanner.nextLine();
+                    
+                    Paciente paciente = new Paciente(nomePaciente, cpfPaciente, idadePaciente, emailPaciente, telefonePaciente);
                     clinica.adicionarPaciente(paciente);
+                    
                     System.out.println("Paciente adicionado com sucesso!");
                     break;
                 case 2:
