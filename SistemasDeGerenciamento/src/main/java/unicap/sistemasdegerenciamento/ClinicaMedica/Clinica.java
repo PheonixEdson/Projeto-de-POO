@@ -41,7 +41,7 @@ public class Clinica {
         return null;
     }
     
-    /*public void agendarConsulta(Paciente paciente, Medico medico, Date data) {
+    public void agendarConsulta(Paciente paciente, Medico medico, Date data) {
         if (medico.isDisponivel()) {
             Consulta consulta = new Consulta(paciente, medico, data);
             consultas.add(consulta);
@@ -51,7 +51,7 @@ public class Clinica {
         else {
             System.out.println("Médico não está disponível.");
         }
-    }*/
+    }
     
     public void buscarConsultas() {
         System.out.println("Relatório de Consultas:");
@@ -59,4 +59,10 @@ public class Clinica {
             System.out.println(consulta);
         }
     }
+
+    public void main(String[] strings) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'main'");
+    }
 }
+
